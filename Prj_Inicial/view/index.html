@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de LEDs - Arduino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:
+                #f4f4f9;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color:
+                #ffffff;
+            background-color:
+                #007bff;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn:hover {
+            background-color:
+                #0056b3;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Painel de Controle dos LEDs</h1>
+    <p>Clique no botão para Ligar / Desligar cada LED:</p>
+
+    <div class="container">
+        <a href="/led4" class="btn">Alternar LED Pino 4</a>
+        <a href="/led5" class="btn">Alternar LED Pino 5</a>
+    </div>
+
+</body>
+
+</html>

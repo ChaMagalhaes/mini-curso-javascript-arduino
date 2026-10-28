@@ -17,7 +17,7 @@ let ledRed, ledYellow, ledGreen, led0;
 // ==========================================
 const arduino = new five.Board({
     port: new EtherPortClient({
-        host: "10.83.202.53", // IP do ESP8266
+        host: "10.179.53.53", // IP do ESP8266
         port: 3030
     }),
     timeout: 20000
