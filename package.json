@@ -1,0 +1,15 @@
+{
+  "name": "mini_curso",
+  "version": "1.0.0",
+  "description": "mini-curso dia 29",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "charles",
+  "license": "ISC",
+  "dependencies": {
+    "etherport-client": "^0.1.4",
+    "johnny-five": "^2.1.0"
+  }
+}

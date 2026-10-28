@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <title>Controle ESP8266</title>
+</head>
+
+<body>
+
+    <h1>Painel do ESP8266</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>LED Onboard</h2>
+            <a href="/led0">
+                <button class="btn">Alternar LED</button>
+            </a>    
+        </div>
+
+        <div class="card">
+            <h2>Umidade do Sensor</h2>
+            <div class="sensor-valor"><span id="umidade">0</span>%</div>
+        </div>
+    </div>
+</body>
+
+</html>

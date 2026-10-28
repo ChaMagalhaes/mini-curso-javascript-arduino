@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    margin: 20px 0 30px 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+/* Container flexível para organizar os cartões */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Cartões responsivos */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    flex: 1 1 280px;
+    max-width: 380px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4a5568;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: #2d3748;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Exibição do valor do sensor */
+.sensor-valor {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Ajustes responsivos para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .sensor-valor {
+        font-size: 2.4rem;
+    }
+}
